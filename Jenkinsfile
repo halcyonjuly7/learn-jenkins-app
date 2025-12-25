@@ -20,7 +20,14 @@ pipeline {
                     npm run build
                 '''
             }
+        }
 
+        stage('Test') {
+            steps {
+                sh '''
+                    echo "Test stage"
+                '''
+            }
         }
 
     }
